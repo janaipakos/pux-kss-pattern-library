@@ -1,0 +1,47 @@
+
+{
+  "name": "pux-kss-pattern-library",
+  "version": "1.0.0",
+  "description": "Generate KSS pattern library in Pux/PureScript. Based on Pux starter app.",
+  "main": "support/index.js",
+  "keywords": [
+    "pux",
+    "purescript-pux",
+    "boilerplate",
+    "starter-app"
+  ],
+  "scripts": {
+    "postinstall": "bower cache clean && bower install",
+    "clean": "rimraf static/dist && rimraf dist",
+    "build": "npm run clean && webpack --config ./webpack.config.client.js --progress --profile --colors && webpack --config ./webpack.config.server.js --progress --profile --colors",
+    "watch": "npm run clean && node ./webpack.config.client.js",
+    "serve": "npm run build && node ./dist/server.js",
+    "start": "npm run watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/janaipakos/pux-kss-pattern-library.git"
+  },
+  "author": "James Anaipakos",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/janaipakos/pux-kss-pattern-library"
+  },
+  "dependencies": {
+    "bower": "^1.7.9",
+    "connect-history-api-fallback": "^1.2.0",
+    "express": "^4.13.4",
+    "preact": "^7.1.0",
+    "preact-compat": "^3.9.4",
+    "purescript": "^0.10.7",
+    "purescript-psa": "^0.3.9",
+    "purs-loader": "^2.4.1",
+    "rimraf": "^2.5.2",
+    "webpack": "^2.3.2",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-node-externals": "^1.5.4",
+    "xhr2": "^0.1.3"
+  }
+}
