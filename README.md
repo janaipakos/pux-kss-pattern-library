@@ -2,11 +2,14 @@
 
 Generate and document re-usable components in PureScript/Pux as Knyle Style Sheets (KSS).
 
-# pux-starter-app
+[Smolder](https://github.com/bodil/purescript-smolder) markup is below the components.
 
-The [starter app](http://github.com/alexmingoia/pux-starter-app) is a pux
-project configured with isomorphic rendering and routing, hot-reloading, and a
+Uses the [pux starter app](http://github.com/alexmingoia/pux-starter-app) for development. This includes isomorphic rendering, routing, hot-reloading, and a
 production server.
+
+## Example
+
+![example1](./static/example.jpg)
 
 ## Installation
 

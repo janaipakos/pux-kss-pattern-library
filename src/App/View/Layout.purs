@@ -8,7 +8,7 @@ import App.State (State(..))
 import App.Events (Event)
 import CSS ((?))
 import CSS.Background (backgroundColor, backgroundRepeat, backgroundSize, by, noRepeat)
-import CSS.Box (boxSizing, borderBox)
+import CSS.Box (boxSizing, borderBox, boxShadow)
 import CSS.Display (fixed, position)
 import CSS.Font (color, fontFamily, sansSerif)
 import CSS.Overflow (hidden, overflow)
@@ -45,7 +45,8 @@ view (State st) =
         backgroundSize (by (100.0 #px) (100.0 #px))
         backgroundRepeat noRepeat
         overflow hidden
-        paddingTop (120.0 #px)
+        paddingTop (0.5 #em)
+        paddingLeft (0.5 #em)
 
       fromString ".button" ? do
         backgroundColor (rgb 134 134 134)
@@ -61,18 +62,21 @@ view (State st) =
       fromString ".button--error" ? do
         backgroundColor (rgb 169 35 35)
         borderColor (rgb 232 201 201)
-        
+
       fromString ".kss-sidebar" ? do
         boxSizing (borderBox)
         position (fixed)
         width (20.0 #pct)
         height (100.0 #pct)
-        backgroundColor (rgb 119 119 119)
+        backgroundColor (rgb 238 238 238)
+        boxShadow (5.0 #px) (5.0 #px) (5.0 #px) (rgb 0 0 0)
 
       fromString ".kss-main" ? do
         width (80.0 #pct)
         height (100.0 #pct)
         marginLeft (20.0 #pct)
+        paddingTop (1.25 #em)
+        paddingLeft (1.25 #em)
 
     case st.route of
       (Home) -> Homepage.view (State st)

@@ -22,4 +22,10 @@ view (State st) =
             span ! className "kss-nav__name" $ text "Home"
         li ! className "kss-nav__menu-item" $ do
           a ! className "kss-nav__menu-link" ! href "./button" $ do
-            span ! className "kss-nav__name" $ text "Button"
+            span ! className "kss-nav__name" $ text "Buttons"
+        li ! className "kss-nav__menu-item" $ do
+          a ! className "kss-nav__menu-link" ! href "./navigation" $ do
+            span ! className "kss-nav__name" $ text "Navigation"
+        li ! className "kss-nav__menu-item" $ do
+          a ! className "kss-nav__menu-link" ! href "./footer" $ do
+            span ! className "kss-nav__name" $ text "Footer"

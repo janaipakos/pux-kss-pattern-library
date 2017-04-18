@@ -16,7 +16,6 @@ view (State st) =
   div do
     Sidebar.view (State st)
     article ! className "kss-main" $ do
-      h3 $ text "Section 1"
       h2 $ text "Buttons"
       div do
         div do
@@ -24,7 +23,7 @@ view (State st) =
           button ! className "button" $ text "click here"
         div do
           p $ text "button--success - A green success button"
-          button ! className "button button--success" $ text "success button" 
+          button ! className "button button--success" $ text "success button"
         div do
           p $ text "button--error - A red error button"
           button ! className "button button--error" $ text "error button"
