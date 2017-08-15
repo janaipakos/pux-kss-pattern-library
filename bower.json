@@ -2,7 +2,7 @@
   "name": "pux-kss-pattern-library",
   "homepage": "https://github.com/janaipakos/pux-kss-pattern-library",
   "authors": [
-    "James Anaipakos <janaipakos@gmail.com>"
+    "James Anaipakos  <janaipakos@gmail.com>"
   ],
   "description": "Generate KSS pattern library in Pux/PureScript. Based on Pux starter app.",
   "main": "support/entry.client.js",
